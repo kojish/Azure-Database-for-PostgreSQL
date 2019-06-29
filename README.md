@@ -1,7 +1,7 @@
 # Azure-Database-for-PostgreSQL
 
 ## Prerequisite
-Install python 3.x
+Install python 3.x, 
 Required modules: retrying, psycopg2
 
 ## Note
