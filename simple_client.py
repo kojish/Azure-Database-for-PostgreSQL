@@ -88,6 +88,7 @@ def main():
             while True:
                 with conn.cursor() as cursor:
                     cursor.execute(statement)
+                    conn.commit()
                     time.sleep(5)
 
                 #print("Completed SQL query: ", cursor.query)
@@ -98,6 +99,8 @@ def main():
 
         finally:
             if(conn):
+                conn.commit()
+                cursor.close()
                 conn.close()
 
 
